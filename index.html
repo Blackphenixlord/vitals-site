@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VITALS — Team TETHER</title>
+<meta name="description" content="VITALS: offline medical decision support for long-duration space crews. NASA HUNCH 2026–27, Team TETHER.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&amp;family=IBM+Plex+Mono:wght@500&amp;family=IBM+Plex+Sans:wght@400;600&amp;display=swap">
+<style>
+body{margin:0;background:#1b1e3d}
+a{color:#9cc4ff}a:hover{color:#ffffff}
+</style>
+
+</head>
+<body>
+<div style="background: #1b1e3d; color: #ffffff; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 18px; line-height: 1.6">
+
+<!-- nav -->
+<header style="position: relative; max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; color: #ffffff; text-decoration: none">
+<svg viewBox="0 0 200 200" width="44" height="44" aria-hidden="true"><circle cx="100" cy="100" r="92" fill="#2f3c9e" stroke="#121530" stroke-width="6"></circle><ellipse cx="100" cy="100" rx="78" ry="30" fill="none" stroke="#ffffff" stroke-width="6" transform="rotate(-24 100 100)"></ellipse><path d="M14 112 H62 L72 92 L84 134 L98 66 L110 118 L118 104 H186" fill="none" stroke="#e03a3e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 4px">VITALS</span>
+</a>
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; font-size: 16px">
+<a href="#how" style="color: #c9cbe0; text-decoration: none">How it works</a>
+<a href="#screens" style="color: #c9cbe0; text-decoration: none">Screens</a>
+<a href="#status" style="color: #c9cbe0; text-decoration: none">Where it stands</a>
+<a href="#team" style="color: #c9cbe0; text-decoration: none">Team</a>
+<a href="https://github.com/Blackphenixlord/lunar-medical-diagnostic" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 7px; background: #a3a3a3; color: #111111; font-weight: 600; text-decoration: none">See the code</a>
+</nav>
+</header>
+
+<!-- hero -->
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 22px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #ff8f91">NASA HUNCH 2026–27 · SOFTWARE &amp; TECHNOLOGY</p>
+<h1 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: clamp(44px, 6vw, 76px); line-height: 1.02; letter-spacing: -1px; text-wrap: balance">When the doctor is twenty minutes away.</h1>
+<p style="margin: 0; font-size: 20px; color: #dfe1f0; max-width: 34em">VITALS is a medical decision-support system for long-duration crews. A crewmember describes how they feel in their own words. VITALS says what it could be, how serious it is, what to do now, and which NASA source that comes from — with no internet connection.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px">
+<a href="#how" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 7px; background: #e03a3e; color: #ffffff; font-weight: 600; text-decoration: none">How it works</a>
+<a href="#screens" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border-radius: 7px; border: 2px solid #a3a3a3; color: #ffffff; font-weight: 600; text-decoration: none">See the screens</a>
+</div>
+<p style="margin: 0; font-size: 15px; color: #c9cbe0">Decision support, not a diagnosis. A student project, not a medical device.</p>
+</div>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="img/aui-answer.png" alt="The VITALS astronaut screen showing an URGENT answer: kidney stone, with sources and what to do" style="width: 100%; height: auto; border-radius: 12px; border: 8px solid #555555; box-shadow: 0 24px 60px rgba(0,0,0,0.45)">
+<figcaption style="font-size: 14px; color: #c9cbe0">The astronaut screen on our demo case: flight day 63, pain in waves, blood in the urine.</figcaption>
+</figure>
+</section>
+
+<!-- the problem -->
+<section style="background: #ffffff; color: #1b1e3d">
+<div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 36px">
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; max-width: 18em; text-wrap: balance">Far from Earth, asking for help takes time a crew may not have.</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 24px">
+<div style="padding: 28px; border-radius: 14px; background: #eef0f8; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 44px; color: #c5221f">3–22 min</span>
+<span>One-way signal delay between Earth and Mars. A question and its answer can take most of an hour.</span>
+</div>
+<div style="padding: 28px; border-radius: 14px; background: #eef0f8; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 44px; color: #c5221f">Offline</span>
+<span>No search engine, no cloud AI. Everything VITALS needs runs on one small computer on board.</span>
+</div>
+<div style="padding: 28px; border-radius: 14px; background: #eef0f8; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: Archivo, sans-serif; font-weight: 800; font-size: 44px; color: #c5221f">Plain words</span>
+<span>Crew describe symptoms the way people really talk — not in clinical terms — and VITALS asks one follow-up at a time.</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- how it works -->
+<section id="how" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #ff8f91">HOW IT WORKS</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1">A language model that has to show its sources.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 16px">
+<div style="padding: 22px; border-radius: 22px; background: #545454; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; color: #ff8f91">01</span>
+<b style="font-size: 20px">Listen</b>
+<span style="font-size: 16px">The complaint is read for findings — pain, where, how bad, flight day — and shown back so the crew can fix anything misread.</span>
+</div>
+<div style="padding: 22px; border-radius: 22px; background: #545454; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; color: #ff8f91">02</span>
+<b style="font-size: 20px">Narrow</b>
+<span style="font-size: 16px">A knowledge base of 14 spaceflight conditions and 72 findings, each tied to NASA and peer-reviewed sources, picks what could fit.</span>
+</div>
+<div style="padding: 22px; border-radius: 22px; background: #545454; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; color: #ff8f91">03</span>
+<b style="font-size: 20px">Reason</b>
+<span style="font-size: 16px">A local model (Llama 3.2 on Ollama) ranks only those conditions. Anything it invents is dropped and reported.</span>
+</div>
+<div style="padding: 22px; border-radius: 22px; background: #545454; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; color: #ff8f91">04</span>
+<b style="font-size: 20px">Double-check</b>
+<span style="font-size: 16px">A separate rule engine always votes on how serious it is. If it raises the alarm, the answer raises the alarm.</span>
+</div>
+<div style="padding: 22px; border-radius: 22px; background: #545454; display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; color: #ff8f91">05</span>
+<b style="font-size: 20px">Answer</b>
+<span style="font-size: 16px">Emergency, urgent, monitor or routine — as a word and a color — then what to do, and the source link for every condition.</span>
+</div>
+</div>
+<div style="padding: 24px 28px; border-radius: 14px; border: 2px solid #555555; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 14px 32px; font-size: 16px">
+<span><b>Citations are never written by the model.</b> It returns an id; the link comes from the knowledge base.</span>
+<span><b>No percentages on screen.</b> Confidence is shown in words — the old numbers weren't defensible.</span>
+<span><b>Same question, same answer.</b> The model runs at temperature 0, so every behavior can be tested.</span>
+</div>
+</section>
+
+<!-- screens -->
+<section id="screens" style="background: #555555">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #ffd2d3">THE SCREENS</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1">Built for gloves, small panels and bad light.</h2>
+<p style="margin: 0; max-width: 40em">Every tap target is at least 44 px. Text passes 4.5:1 contrast. The page is one file that loads with the network cable pulled.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="img/login.png" alt="VITALS login screen: emblem, name and password fields, and a red emergency button" style="width: 100%; height: auto; border-radius: 10px">
+<figcaption style="font-size: 16px"><b>Log in.</b> One login per person, so every report says who did what. A red Emergency button skips straight to the symptom check.</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="img/aui-profile.png" alt="Astronaut screen with the profile drawer open next to the chat" style="width: 100%; height: auto; border-radius: 10px">
+<figcaption style="font-size: 16px"><b>Chat and profile.</b> The side rail opens into chats, profile, vitals, doctor notes and supplies. A wrong reading can be fixed with one tap.</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="img/aui-vitals.png" alt="Vitals drawer showing every sensor as not connected" style="width: 100%; height: auto; border-radius: 10px">
+<figcaption style="font-size: 16px"><b>Vitals, honestly empty.</b> Heart rate, oxygen, blood pressure and temperature slots wait for real sensors. No fake numbers.</figcaption>
+</figure>
+</div>
+<p style="margin: 0; font-size: 16px">Next: a ground-crew screen that decides what a reviewing doctor sees, and a doctor screen that records agree / disagree for every answer.</p>
+</div>
+</section>
+
+<!-- status -->
+<section id="status" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #ff8f91">WHERE IT STANDS · BENCHMARK, 26 SEP 2026</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1">Measured, not promised.</h2>
+<p style="margin: 0; max-width: 42em; color: #dfe1f0">26 test complaints with known answers, plus 7 that nothing in the knowledge base should match. Run on a desktop GPU.</p>
+</div>
+<div style="overflow-x: auto">
+<table style="width: 100%; min-width: 620px; border-collapse: collapse; font-size: 17px">
+<thead><tr style="text-align: left; color: #c9cbe0"><th style="padding: 12px; border-bottom: 2px solid #6f7391">Setup</th><th style="padding: 12px; border-bottom: 2px solid #6f7391; text-align: right">Named the right condition</th><th style="padding: 12px; border-bottom: 2px solid #6f7391; text-align: right">Missed escalations</th><th style="padding: 12px; border-bottom: 2px solid #6f7391; text-align: right">Time per answer</th></tr></thead>
+<tbody>
+<tr><td style="padding: 12px; border-bottom: 1px solid #3a3e63">Llama 3.2, 3B</td><td style="padding: 12px; border-bottom: 1px solid #3a3e63; text-align: right">19 of 26</td><td style="padding: 12px; border-bottom: 1px solid #3a3e63; text-align: right">0</td><td style="padding: 12px; border-bottom: 1px solid #3a3e63; text-align: right">about 4 s</td></tr>
+<tr><td style="padding: 12px; border-bottom: 1px solid #3a3e63">Llama 3.1, 8B</td><td style="padding: 12px; border-bottom: 1px solid #3a3e63; text-align: right">22 of 26</td><td style="padding: 12px; border-bottom: 1px solid #3a3e63; text-align: right">0</td><td style="padding: 12px; border-bottom: 1px solid #3a3e63; text-align: right">about 8 s</td></tr>
+<tr><td style="padding: 12px; border-bottom: 1px solid #3a3e63">Rule engine alone</td><td style="padding: 12px; border-bottom: 1px solid #3a3e63; text-align: right">25 of 26</td><td style="padding: 12px; border-bottom: 1px solid #3a3e63; text-align: right">0</td><td style="padding: 12px; border-bottom: 1px solid #3a3e63; text-align: right">instant</td></tr>
+</tbody>
+</table>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px">
+<div style="padding: 24px; border-radius: 14px; background: #2a2e57; display: flex; flex-direction: column; gap: 6px">
+<b>Working</b>
+<span style="font-size: 16px; color: #dfe1f0">Full pipeline, astronaut screen, per-person login, Docker image verified with no internet, 175 automated tests.</span>
+</div>
+<div style="padding: 24px; border-radius: 14px; background: #2a2e57; display: flex; flex-direction: column; gap: 6px">
+<b>Still weak</b>
+<span style="font-family: inherit; font-size: 16px; color: #dfe1f0">Saying “nothing fits.” Both models almost always guess a condition, even for complaints outside the knowledge base. That is the next fix.</span>
+</div>
+<div style="padding: 24px; border-radius: 14px; background: #2a2e57; display: flex; flex-direction: column; gap: 6px">
+<b>Not yet</b>
+<span style="font-size: 16px; color: #dfe1f0">Run on the NVIDIA Jetson Orin Nano we're targeting, real sensors, and review by a licensed clinician.</span>
+</div>
+</div>
+</section>
+
+<!-- team -->
+<section id="team" style="background: #ffffff; color: #1b1e3d">
+<div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #a3191c">TEAM TETHER</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1">Three students, one tether home.</h2>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-direction: column"><b>Joshua Collado</b><span style="color: #3c3f5c">Team lead · reasoning engine, server, Docker</span></div>
+<div style="display: flex; flex-direction: column"><b>Joaquin</b><span style="color: #3c3f5c">Medical research · knowledge-base rules</span></div>
+<div style="display: flex; flex-direction: column"><b>Cruz</b><span style="color: #3c3f5c">UI design · user testing</span></div>
+<div style="display: flex; flex-direction: column"><b>Ms. Sylvia Odoms</b><span style="color: #3c3f5c">Teacher sponsor · [SCHOOL NAME]</span></div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #a3191c">THE ROAD TO HOUSTON</p>
+<div style="display: flex; flex-direction: column; gap: 0">
+<div style="display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #d5d8e8"><b style="width: 120px; flex: none">Fall 2026</b><span>Preliminary Design Review — date [TBD]</span></div>
+<div style="display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #d5d8e8"><b style="width: 120px; flex: none">Winter</b><span>Critical Design Review — date [TBD]</span></div>
+<div style="display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid #d5d8e8"><b style="width: 120px; flex: none">May 4–6, 2027</b><span>HUNCH Final Design Review, Johnson Space Center</span></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
+<a href="https://github.com/Blackphenixlord/lunar-medical-diagnostic" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 7px; background: #1b1e3d; color: #ffffff; font-weight: 600; text-decoration: none">Code on GitHub</a>
+<a href="mailto:[TEAM EMAIL]" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 7px; border: 2px solid #1b1e3d; color: #1b1e3d; font-weight: 600; text-decoration: none">[TEAM EMAIL]</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 48px; font-size: 14px; color: #c9cbe0">
+<p style="margin: 0 0 10px"><a href="brochure/VITALS-brochure.pdf">Download the brochure (PDF)</a> · <a href="trifold-board/VITALS-trifold-board.pdf">Download the tri-fold board (PDF)</a></p>
+VITALS is a student project for NASA HUNCH. It is decision support, not a diagnosis, and not a medical device. Incidence figures come from NASA Integrated Medical Model baselines and peer-reviewed studies.
+</footer>
+</div>
+</body>
+</html>
